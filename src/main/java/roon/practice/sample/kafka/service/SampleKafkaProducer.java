@@ -13,7 +13,7 @@ public class SampleKafkaProducer {
 	private final KafkaTemplate<String, String> kafkaTemplate;
 
 	@Autowired
-	public SampleKafkaProducer(KafkaTemplate kafkaTemplate) {
+	public SampleKafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
 		this.kafkaTemplate = kafkaTemplate;
 	}
 

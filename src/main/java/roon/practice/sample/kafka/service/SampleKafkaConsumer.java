@@ -1,6 +1,5 @@
 package roon.practice.sample.kafka.service;
 
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class SampleKafkaConsumer {
 
 	@KafkaListener(topics = "sample-topic", groupId = "kafka-sample")
-	public void consume(String message) throws IOException {
+	public void consume(String message) {
 		log.info("consumed message = " + message);
 	}
 
