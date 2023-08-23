@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: kafka-practice
+  profiles:
+    active: local
+    include: datasource, kafka
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+
+server:
+  shutdown: graceful
+  error:
+    include-message: always
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+server:
+  port: 12345
