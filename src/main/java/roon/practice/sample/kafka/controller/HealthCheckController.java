@@ -1,4 +1,4 @@
-package roon.practice.sample.kafka;
+package roon.practice.sample.kafka.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
