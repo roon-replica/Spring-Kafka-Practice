@@ -1,14 +1,15 @@
 ### 목적
-- kafka에 익숙해지기
-  - spring에서 kafka 어케 쓰는지
-  - 설정
-- kafka 유용하게 사용해보기
+- kafka에 익숙해지고 유용하게 사용해보기
 
 ### 해볼거 
 - [x] producer, consumer 설정 및 helloWorld
 - [x] 같은 메시지를 여러 곳에서 소비할 수 있도록 해보기 (groupId 설정)
 - [x] 커스텀 serialization/deserialization 설정해보기
-- [ ] message acknowledgment 설정으로 신뢰성있는 메시지 처리?
+  - [String이 아닌 DTO에 적용](https://www.baeldung.com/kafka-custom-serializer) 
+  - [Avro?](https://docs.confluent.io/platform/current/schema-registry/fundamentals/serdes-develop/serdes-avro.html) 
+- [ ] producer 추가 설정
+  - acknowledgment 
+  - batch size?
 - [ ] 에러 핸들링?
 - [ ] 메시지 헤더로 부가정보 전달해보기?
 - [ ] topic partitioning?, message keying?
