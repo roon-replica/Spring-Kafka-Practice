@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import roon.practice.sample.kafka.controller.dto.MessageDto;
 import roon.practice.sample.kafka.service.SampleKafkaProducer;
 
 @RestController
@@ -17,7 +18,7 @@ public class SampleKafkaController {
 	}
 
 	@PostMapping
-	public String sendMessage(@RequestBody String message) {
+	public String sendMessage(@RequestBody MessageDto message) {
 		producer.sendMessage(message);
 		return "success";
 	}

@@ -4,6 +4,23 @@
   - 설정
 - kafka 유용하게 사용해보기
 
+### 해볼거 
+- [x] producer, consumer 설정 및 helloWorld
+- [x] 같은 메시지를 여러 곳에서 소비할 수 있도록 해보기 (groupId 설정)
+- [x] 커스텀 serialization/deserialization 설정해보기
+- [ ] message acknowledgment 설정으로 신뢰성있는 메시지 처리?
+- [ ] 에러 핸들링?
+- [ ] 메시지 헤더로 부가정보 전달해보기?
+- [ ] topic partitioning?, message keying?
+- [ ] offset 관리?
+- [ ] Producer and Consumer Interceptors?
+- [ ] Error 시나리오?
+- [ ] testing
+- [ ] 모니터링?
+- [ ] 프로듀서, 컨슈머 수평확장?
+- [ ] transactional messaging?
+- [ ] 실제 사용 예시 알아보기
+
 
 ### 로컬에서 카프카 실행
 - 카프카 설치 디렉토리로 이동해서 아래 명령 실행
